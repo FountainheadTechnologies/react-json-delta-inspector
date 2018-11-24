@@ -16,7 +16,7 @@ npm install @fountainhead/react-json-delta-inspector
 For Yarn users:
 
 ```bash
-npm install @fountainhead/react-json-delta-inspector
+yarn add @fountainhead/react-json-delta-inspector
 ```
 
 ## Usage
