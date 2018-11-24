@@ -1,5 +1,7 @@
 **.test.js
 tsconfig*.json
+tslint.json
 src
 types
 coverage
+.circleci
