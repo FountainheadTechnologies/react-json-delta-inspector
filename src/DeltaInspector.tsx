@@ -5,6 +5,7 @@ import ThemeProvider from 'react-inspector/lib/styles/ThemeProvider';
 import TreeView from 'react-inspector/lib/tree-view/TreeView';
 
 import { dataIterator } from './dataIterator';
+import { expandPaths } from './expandPaths';
 import { NodeRenderer } from './NodeRenderer';
 import { makeRenderedObject } from './renderedObject';
 
@@ -19,6 +20,7 @@ export const DeltaInspector: React.SFC<Props> = ({ prev, delta }) => (
       nodeRenderer={NodeRenderer}
       dataIterator={dataIterator}
       data={makeRenderedObject(prev, delta)}
+      expandPaths={expandPaths(delta)}
     />
   </ThemeProvider>
 );

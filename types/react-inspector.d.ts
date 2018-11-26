@@ -31,6 +31,7 @@ declare module 'react-inspector/lib/tree-view/TreeView' {
     }>;
     dataIterator: any;
     data: any;
+    expandPaths?: string[];
   }>;
 
   export default TreeView;
