@@ -14,7 +14,7 @@ export type Props = {
   delta: Diff;
 };
 
-export const DeltaInspector: React.SFC<Props> = ({ prev, delta }) => (
+const DeltaInspector: React.SFC<Props> = ({ prev, delta }) => (
   <ThemeProvider theme='chromeLight'>
     <TreeView
       nodeRenderer={NodeRenderer}
@@ -24,3 +24,5 @@ export const DeltaInspector: React.SFC<Props> = ({ prev, delta }) => (
     />
   </ThemeProvider>
 );
+
+export { DeltaInspector };
